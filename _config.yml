@@ -16,6 +16,12 @@ logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
 CNAME: #add cname for website to be created
 
+
+algolia:
+  application_id: "IM16MDJE1Y"
+  index_name: "jekyll"
+
+
 # Social info
 navigation: True # show the navbar links
 subscribers: True # you need to connect an external service for this to work,
@@ -73,6 +79,8 @@ relative_source: ../jasper2/
 destination: ../jasper2-pages/
 # production_url:  https://jekyller.github.io/jasper2/
 # source_url:  https://github.com/jekyller/jasper2/
+
+
 
 exclude:
   - assets/css

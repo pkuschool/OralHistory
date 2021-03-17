@@ -20,9 +20,60 @@
             {% if site.twitter %}
                 <a class="social-link social-link-tw" href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener">{% include twitter.html %}</a>
             {% endif %}
+            
         </div> -->
-        <!-- {% if site.subscribers %}
+        <div id="search-container" style="width: 20vw">
+            <input type="text" id="search-input" placeholder="搜索文章或内容">
+            <ul id="results-container"></ul>
+        </div>
+        {% if site.subscribers %}
             <a class="subscribe-button" href="#subscribe">Subscribe</a>
-        {% endif %} -->
+        {% endif %}
+        
+          
     </div>
 </nav>
+
+<style>
+    
+    #search-input {
+        width: 10%;
+        height: 30px;
+        color: #333;
+        background-color: rgba(227,231,236,.2);
+        line-height: 35px;
+        /* padding:0px 5px; */
+        border: 1px solid #c0c0c0;
+        font-size: 10px;
+        /* font-weight: bold; */
+        border-radius: 17px;
+        outline: none;
+        /* box-sizing: border-box; */
+        margin-top: 20px;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    }
+    #search-input:focus {
+        width:90px;
+        outline: none;
+        border-color: rgb(102, 175, 233);
+        margin-top: 20px;
+        background-color: #fff;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #007fff;
+    }
+
+</style>
+
+<script src="{{ site.baseurl }}simple-jekyll-search.min.js"></script>
+
+<script>
+    SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{ site.baseurl }}search.json',
+    searchResultTemplate: '<li><a href="{url}" style="display:block;width: 100%;padding-left:10px; padding-right:10px;"><i class="fa fa-angle-double-right fa-border" aria-hidden="true"></i>    {title}</a></li>', // 文章列表模板
+    noResultsText: '没有搜索到文章', // 无搜索数据提示语
+    limit: 20, // 返回最大文章数
+    fuzzy: true // 是否模糊匹配
+})
+</script>
+

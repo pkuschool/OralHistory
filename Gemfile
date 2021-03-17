@@ -5,3 +5,6 @@ gem "github-pages", "~> 192"
 gem "rake", "~> 12.3.1"
 gem "slugify", "~> 1.0"
 gem 'wdm', '>= 0.1.0'
+group :jekyll_plugins do
+  gem 'jekyll-algolia'
+end
