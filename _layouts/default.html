@@ -22,7 +22,7 @@
     <!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" />
     <!--[if IE]>
         <style>
             p, ol, ul{
@@ -40,8 +40,8 @@
 </head>
 <body class="{% if paginator.page > 1 %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %}">
     
-    <div id="searchdiv">
-        <div id="search-container" style="width: 20vw">
+    <div id="searchdiv" >
+        <div id="search-container" >
             <input type="text" id="search-input" placeholder="搜索文章或内容">
             <ul id="results-container"></ul>
         </div>

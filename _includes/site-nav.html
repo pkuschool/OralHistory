@@ -32,11 +32,12 @@
                 width: 100%;
                 height: 100%;
                 opacity: 0.7;
+                /* text-align: center; */
 
                 
 			}
         </style>
-        <button id="searchbutton">123123</button>
+        <i id="searchbutton" class="fa fa-search navbar-brand search-icon"></i>
     
 
         
@@ -55,19 +56,22 @@
     #search-input {
         width: 90%;
         height: 4vw;
-        color: #333;
+        color: rgb(255, 255, 255);
         background-color: rgba(227,231,236,.2);
         line-height: 35px;
         position:absolute;
+    
         /* padding:0px 5px; */
         /* border: 1px solid #c0c0c0; */
-        font-size: 10px;
+        font-size: 25px;
         /* font-weight: bold; */
         /* border-radius: 17px; */
         outline: none;
-        /* box-sizing: border-box; */
-        /* margin-top: 20px; */
+
+        top: 5vw;
         left: 50%;
+        transform: translate(-50%, -50%);
+
         box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
         border-color: #878787;
         border-style: solid;
@@ -78,7 +82,7 @@
     }
     #search-input:focus {
         width:90%;
-        height: 30px;
+        height: 4vw;
         outline: none;
         /* border-color: rgb(102, 175, 233); */
         /* margin-top: 20px; */
@@ -91,8 +95,17 @@
         border-bottom-width: 1px;
         border-left-width: 0px;
     }
-    
+    #results-container {
+        margin: 8vw 3vw 21.5em;
+        width:100%;
+        height:100%;
+        list-style: none;
+    }
 
+    #results-container li a{
+        text-align:left;   
+        color: #d0cec8; 
+    }
 </style>
 
 <script src="{{ site.baseurl }}simple-jekyll-search.min.js"></script>
@@ -103,9 +116,9 @@
     resultsContainer: document.getElementById('results-container'),
     json: '{{ site.baseurl }}search.json',
     searchResultTemplate: '<li><a href="{url}" style="display:block;width: 100%;padding-left:10px; padding-right:10px;"><i class="fa fa-angle-double-right fa-border" aria-hidden="true"></i>    {title}</a></li>', // 文章列表模板
-    noResultsText: '没有搜索到文章', // 无搜索数据提示语
-    limit: 20, // 返回最大文章数
-    fuzzy: true // 是否模糊匹配
+    noResultsText: '<div style="margin-left: 10vw; padding: 30px 0 60px 0"><i class="fa fa-5x text-center fa-coffee" aria-hidden="true" style="margin-top: 20px"></i><p id="search-p">Oops, nothing found : (️</p></div', // 无搜索数据提示语
+    limit: 15, // 返回最大文章数
+    fuzzy: false // 是否模糊匹配
 })
 </script>
-
+>
