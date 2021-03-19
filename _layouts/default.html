@@ -17,7 +17,10 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/syntax.css" />
     <!-- highlight.js -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="{{site.baseurl}}search.js"></script>
     <style>.hljs { background: none; }</style>
+    <!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     
 
     <!--[if IE]>
@@ -36,6 +39,13 @@
 
 </head>
 <body class="{% if paginator.page > 1 %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %}">
+    
+    <div id="searchdiv">
+        <div id="search-container" style="width: 20vw">
+            <input type="text" id="search-input" placeholder="搜索文章或内容">
+            <ul id="results-container"></ul>
+        </div>
+    </div>
     
     <div class="site-wrapper">
         <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->

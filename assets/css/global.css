@@ -131,9 +131,14 @@ img {
 html {
     box-sizing: border-box;
     font-family: sans-serif;
+    height:100%;
+    overflow:hidden;
+
+    position:absolute;
 
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    z-index:1;
 }
 *,
 *:before,

@@ -22,44 +22,76 @@
             {% endif %}
             
         </div> -->
-        <div id="search-container" style="width: 20vw">
-            <input type="text" id="search-input" placeholder="搜索文章或内容">
-            <ul id="results-container"></ul>
-        </div>
-        {% if site.subscribers %}
+        <style>
+            #searchdiv{
+				position:absolute;
+            
+				background-color: black;
+				display: none;
+                z-index:9999;
+                width: 100%;
+                height: 100%;
+                opacity: 0.7;
+
+                
+			}
+        </style>
+        <button id="searchbutton">123123</button>
+    
+
+        
+        
+        <!-- {% if site.subscribers %}
             <a class="subscribe-button" href="#subscribe">Subscribe</a>
-        {% endif %}
+        {% endif %} -->
         
           
     </div>
 </nav>
 
+
 <style>
     
     #search-input {
-        width: 10%;
-        height: 30px;
+        width: 90%;
+        height: 4vw;
         color: #333;
         background-color: rgba(227,231,236,.2);
         line-height: 35px;
+        position:absolute;
         /* padding:0px 5px; */
-        border: 1px solid #c0c0c0;
+        /* border: 1px solid #c0c0c0; */
         font-size: 10px;
         /* font-weight: bold; */
-        border-radius: 17px;
+        /* border-radius: 17px; */
         outline: none;
         /* box-sizing: border-box; */
-        margin-top: 20px;
+        /* margin-top: 20px; */
+        left: 50%;
         box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+        border-color: #878787;
+        border-style: solid;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 1px;
+        border-left-width: 0px
     }
     #search-input:focus {
-        width:90px;
+        width:90%;
+        height: 30px;
         outline: none;
-        border-color: rgb(102, 175, 233);
-        margin-top: 20px;
-        background-color: #fff;
+        /* border-color: rgb(102, 175, 233); */
+        /* margin-top: 20px; */
+        /* background-color: #fff; */
         box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #007fff;
+        border-color: #878787;
+        border-style: solid;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 1px;
+        border-left-width: 0px;
     }
+    
 
 </style>
 
