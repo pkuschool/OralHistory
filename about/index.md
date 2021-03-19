@@ -8,10 +8,10 @@ class: page-template
 subclass: 'post page'
 ---
 
-Ghost is professional publishing platform designed for modern journalism. This is a demo site of a basic Ghost install to give you a general sense of what a new Ghost site looks like when set up for the first time.
 
-> If you'd like to set up a site like this for yourself, head over to [Ghost.org](https://ghost.org/) and start a free 14 day trial to give Ghost a try!
+“北大附中口述史”人文项目是博雅学院面向附中高中部学生开设的学期课程。这是由一群高中生和指导教师及口述史专业飞行嘉宾组成的口述史团队。我们相信“个体的经验和故事是宝贵的”，我们关心“为什么过去对我们有意义”。
 
-If you're a developer: Ghost is a completely open source (MIT) Node.js application built on a JSON API with an Ember.js admin client. It works with MySQL and SQLite, and is publicly available [on Github](https://github.com/TryGhost/ghost).
+## 项目初衷：
 
-If you need help with using Ghost, you'll find a ton of useful articles on [our knowledgebase](https://help.ghost.org/), as well as extensive [developer documentation](https://docs.ghost.org/).
+北大附中是学生们口中的霍格沃兹魔法学校，自由精神是附中一脉相承的基因；选课、走班、书院、学院、导师制、学长制等，北大附中教育改革背后的逻辑是什么？而附中的教育在每一个附中人身上会有怎样的影响？北大附中口述史项目希望通过采访附中的老师、校友、学校领导等的故事，还原北大附中的教育改革史，了解与我们同样在这所校园里成长和生活的人的故事。
+
