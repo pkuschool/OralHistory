@@ -14,3 +14,11 @@ getting-started:
   name: getting-started
   description: False
   cover: False
+teacher-picture:
+  name: 教师图鉴
+  description: 当地
+  cover: False
+  
+
+
+  

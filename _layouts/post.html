@@ -30,10 +30,13 @@ into the {body} of the default.hbs template -->
                     {% if page.tags.size > 0 %}
                         <span class="date-divider">/</span>
                         {% for tag in page.tags %}
+                        
+                        
+                            <a href='{{ site.baseurl }}tag/{{ tag | slugify: "latin" }}/'>{{ site.data.tags[tag].name }}</a>
                             {% if forloop.index == page.tags.size %}
-                               <a href='{{ site.baseurl }}tag/{{ tag | slugify: "latin" }}/'>{{ tag | upcase }}</a>
+                            
                             {% else %}
-                               <a href='{{ site.baseurl }}tag/{{ tag | slugify: "latin" }}/'>{{ tag | upcase }}</a>,
+                               ,
                             {% endif %}
                         {% endfor %}
                     {% endif %}
