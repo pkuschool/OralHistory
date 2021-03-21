@@ -9,7 +9,7 @@
         <div class="post-card-content">
             <a class="post-card-content-link" href="{{ site.baseurl }}{{ page.next.url | remove_first: '/' }}">
                 <header class="post-card-header">
-                    {% if page.next.tags.size > 0 %}
+                    <!-- {% if page.next.tags.size > 0 %}
                         {% for tag in page.next.tags %}
                             {% if forloop.index == page.next.tags.size %}
                                 <span class="post-card-tags">{{ tag | capitalize }}</span>
@@ -17,16 +17,14 @@
                                <span class="post-card-tags">{{ tag | capitalize }}</span>
                             {% endif %}
                         {% endfor %}
-                    {% endif %}
+                    {% endif %} -->
 
                     <h2 class="post-card-title">{{ page.next.title }}</h2>
                 </header>
                 <section class="post-card-excerpt">
-                    {% if post.excerpt %}
-                        <p>{{ post.excerpt | strip_html | truncatewords: 33, "" }}</p>
-                    {% else %}
-                        <p>{{ post.content | strip_html | truncatewords: 33, "" }}</p>
-                    {% endif %}
+                    
+                    <p>{{ page.next.excerpt | strip_html | truncatewords: 33, "" }}</p>
+                    
                 </section>
             </a>
             <footer class="post-card-meta">
@@ -41,11 +39,12 @@
                     {% endif %}
                 {% endfor %}
                 <span class="reading-time">
-                    {% assign words = post.content | strip_html | number_of_words %}
-                    {% if words <= words_per_minute %}
-                      1 min read
-                    {% else %}
-                      {{ words | divided_by:words_per_minute }} min read
+                    {% if page.next.tags.size > 0 %}
+                        {% for tag in page.next.tags %}
+                            
+                            <span class="post-card-tags">{{ site.data.tags[tag].name }}</span>
+                            
+                        {% endfor %}
                     {% endif %}
                 </span>
             </footer>
