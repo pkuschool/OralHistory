@@ -74,3 +74,15 @@ martin:
   facebook: False
   twitter: False
   cover: False
+biology:
+  username: biology
+  name: 生物
+  location: Memphis, Tennessee
+  url_full: False
+  url: False
+  bio: An American pastor, activist, humanitarian. People know me for leading the African-American Civil Rights movement using nonviolent civil disobedience.
+  picture: assets/images/martin.jpg
+  facebook: False
+  twitter: False
+  cover: False
+  
