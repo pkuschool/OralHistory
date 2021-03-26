@@ -9,15 +9,7 @@
         <div class="post-card-content">
             <a class="post-card-content-link" href="{{ site.baseurl }}{{ page.next.url | remove_first: '/' }}">
                 <header class="post-card-header">
-                    <!-- {% if page.next.tags.size > 0 %}
-                        {% for tag in page.next.tags %}
-                            {% if forloop.index == page.next.tags.size %}
-                                <span class="post-card-tags">{{ tag | capitalize }}</span>
-                            {% else %}
-                               <span class="post-card-tags">{{ tag | capitalize }}</span>
-                            {% endif %}
-                        {% endfor %}
-                    {% endif %} -->
+                    
 
                     <h2 class="post-card-title">{{ page.next.title }}</h2>
                 </header>
@@ -28,25 +20,42 @@
                 </section>
             </a>
             <footer class="post-card-meta">
-                {% for author in site.data.authors %}
-                    {% if author[1].username == page.next.author %}
-                        {% if author[1].picture %}
-                        <img class="author-profile-image" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ author[1].name }}" />
+                <div>
+                    {% for author in site.data.authors %}
+                        {% if author[1].username == page.next.author %}
+                            {% if author[1].picture %}
+                            <img class="author-profile-image" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ author[1].name }}" />
+                            {% endif %}
+                            <span class="post-card-author">
+                                <a href="{{ site.baseurl }}author/{{ page.next.author }}/">{{ author[1].name }}</a>
+                            </span>
                         {% endif %}
-                        <span class="post-card-author">
-                            <a href="{{ site.baseurl }}author/{{ page.next.author }}/">{{ author[1].name }}</a>
-                        </span>
-                    {% endif %}
-                {% endfor %}
-                <span class="reading-time">
-                    {% if page.next.tags.size > 0 %}
-                        {% for tag in page.next.tags %}
-                            
-                            <span class="post-card-tags">{{ site.data.tags[tag].name }}</span>
-                            
+                    {% endfor %}
+                </div>
+                <div>
+                    <h5 style="float:left;">采访人：
+                        {% for author2 in page.next.authors2 %}
+                        
+                            {{ author2 }}
+                            {% if forloop.index == page.next.authors2.size %}
+    
+                                {% else %}
+                                ，
+                                {% endif %}
                         {% endfor %}
-                    {% endif %}
-                </span>
+                    </h5>
+                    <span class="reading-time" style="margin-top:17px;float:right;">
+                        {% if page.next.tags.size > 0 %}
+                            {% for tag in page.next.tags %}
+                                
+                                <span class="post-card-tags">{{ site.data.tags[tag].name }}</span>
+                                
+                            {% endfor %}
+                        {% endif %}
+                    </span>
+                </div>
+                
+                
             </footer>
         </div>
     </article>

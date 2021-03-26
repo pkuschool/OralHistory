@@ -42,19 +42,6 @@ into the {body} of the default.hbs template -->
                     {% endif %}
                 </section>
                 <h1 class="post-full-title">{{ page.title }}</h1>
-                <h3>采访人：
-                    {% for author2 in page.authors2 %}
-                    <!-- {{ page.authors.size }} -->
-                        {{ author2 }}
-                        
-                        {% if forloop.index == page.authors2.size %}
-
-                        {% else %}
-                        ，
-                        {% endif %}
-                
-                    {% endfor %}
-                </h3>
             </header>
 
             {% if page.cover %}

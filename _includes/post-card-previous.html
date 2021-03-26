@@ -29,6 +29,7 @@
                 </section>
             </a>
             <footer class="post-card-meta">
+                <div>
                 {% for author in site.data.authors %}
                     {% if author[1].username == page.previous.author %}
                         {% if author[1].picture %}
@@ -39,16 +40,32 @@
                         </span>
                     {% endif %}
                 {% endfor %}
-                <span class="reading-time">
-                    {% if page.previous.tags.size > 0 %}
-                        {% for tag in page.previous.tags %}
-                            
-                            <span class="post-card-tags">{{ site.data.tags[tag].name }}</span>
-                            
+                </div>
+                <div>
+                    <h5 style="float:left;">采访人：
+                        {% for author2 in page.previous.authors2 %}
+                        
+                            {{ author2 }}
+                            {% if forloop.index == page.previous.authors2.size %}
+    
+                                {% else %}
+                                ，
+                                {% endif %}
                         {% endfor %}
-                    {% endif %}
+                    </h5>
+                    <span class="reading-time" style="margin-top:17px;float:right;">
+                        {% if page.previous.tags.size > 0 %}
+                            {% for tag in page.previous.tags %}
+                                
+                                <span class="post-card-tags">{{ site.data.tags[tag].name }}</span>
+                                
+                            {% endfor %}
+                        {% endif %}
+    
+                    </span>
+                </div>
 
-                </span>
+                
             </footer>
         </div>
     </article>

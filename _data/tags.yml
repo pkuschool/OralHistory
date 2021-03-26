@@ -18,6 +18,10 @@ teacher-picture:
   name: 教师图鉴
   description: 当地
   cover: False
+alumni-stories:
+  name: 校友故事
+  description: 念念念
+  cover: False
   
 
 
