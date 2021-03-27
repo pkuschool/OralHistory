@@ -258,12 +258,14 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full  post ">
+        <article
+            class="post-full  post ">
 
             <header class="post-full-header">
-                
+
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime=" 1 September 2012"> 1 September 2012</time>
+                    <time class="post-full-meta-date"
+                        datetime=" 1 September 2012"> 1 September 2012</time>
                     
                 </section>
                 <h1 class="post-full-title">A Full and Comprehensive Style Test</h1>
@@ -725,36 +727,38 @@ c.draw = function() {
                 <!-- Everything inside the #author tags pulls data from the author -->
                 <!-- #author-->
                 
-                    
                 
-                    
                 
-                    
-                        <section class="author-card">
-                            
-                                <img class="author-profile-image" src="/OralHistory/assets/images/john.jpg" alt="john" />
-                            
-                            <section class="author-card-content">
-                                <h4 class="author-card-name"><a href="/OralHistory/author/john">John O'Nolan</a></h4>
-                                
-                                    <p>Founder at Ghost.org. Writes about open source, startup life, non-profits, and publishing platforms. Travels the world with a bag of kites.</p>
-                                
-                            </section>
-                        </section>
-                        <div class="post-full-footer-right">
-                            <a class="author-card-button" href="/OralHistory/author/john">Read More</a>
-                        </div>
-                    
                 
-                    
                 
-                    
                 
+                <section class="author-card">
                     
+                    <img class="author-profile-image" src="/OralHistory/assets/images/john.jpg"
+                        alt="john" />
+                    
+                    <section class="author-card-content">
+                        <h4 class="author-card-name"><a
+                                href="/OralHistory/author/john">John O'Nolan</a></h4>
+                        
+                        <p>Founder at Ghost.org. Writes about open source, startup life, non-profits, and publishing platforms. Travels the world with a bag of kites.</p>
+                        
+                    </section>
+                </section>
+                <div class="post-full-footer-right">
+                    <a class="author-card-button" href="/OralHistory/author/john">Read More</a>
+                </div>
                 
-                    
                 
-                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
                 <!-- /author  -->
             </footer>
@@ -766,29 +770,68 @@ c.draw = function() {
             <!--PC和WAP自适应版-->
 
             
-            
 
-            <div id="SOHUCS" sid="/a-full-and-comprehensive-style-test"></div> 
-            <script type="text/javascript"> 
-            (function(){ 
-            var appid = 'cyvnjRV1O'; 
-            var conf = '99ebfeb952c491d3bbc829f14917081f'; 
-            var width = window.innerWidth || document.documentElement.clientWidth; 
-            if (width < 1000) {
-            var head = document.getElementsByTagName('head')[0]||document.head||document.documentElement;
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.charset = 'utf-8';
-            script.id = 'changyan_mobile_js';
-            script.src = 'https://cy-cdn.kuaizhan.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf;
-            head.appendChild(script);
-            } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://cy-cdn.kuaizhan.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+
+            <div id="SOHUCS" sid="/a-full-and-comprehensive-style-test"></div>
+            <script type="text/javascript">
+                (function () {
+                    var appid = 'cyvnjRV1O';
+                    var conf = '99ebfeb952c491d3bbc829f14917081f';
+                    var width = window.innerWidth || document.documentElement.clientWidth;
+                    if (width < 1000) {
+                        var head = document.getElementsByTagName('head')[0] || document.head || document
+                            .documentElement;
+                        var script = document.createElement('script');
+                        script.type = 'text/javascript';
+                        script.charset = 'utf-8';
+                        script.id = 'changyan_mobile_js';
+                        script.src =
+                            'https://cy-cdn.kuaizhan.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' +
+                            appid + '&conf=' + conf;
+                        head.appendChild(script);
+                    } else {
+                        var loadJs = function (d, a) {
+                            var c = document.getElementsByTagName("head")[0] || document.head || document
+                                .documentElement;
+                            var b = document.createElement("script");
+                            b.setAttribute("type", "text/javascript");
+                            b.setAttribute("charset", "UTF-8");
+                            b.setAttribute("src", d);
+                            if (typeof a === "function") {
+                                if (window.attachEvent) {
+                                    b.onreadystatechange = function () {
+                                        var e = b.readyState;
+                                        if (e === "loaded" || e === "complete") {
+                                            b.onreadystatechange = null;
+                                            a()
+                                        }
+                                    }
+                                } else {
+                                    b.onload = a
+                                }
+                            }
+                            c.appendChild(b)
+                        };
+                        loadJs("https://cy-cdn.kuaizhan.com/upload/changyan.js", function () {
+                            window.changyan.api.config({
+                                appid: appid,
+                                conf: conf
+                            })
+                        });
+                    }
+                })();
+            </script>
 
         </article>
 
     </div>
 </main>
+<style>
 
+    .module-cmt-notice{
+        display: none;
+    }
+</style>
 <!-- Links to Previous/Next posts -->
 <aside class="read-next outer">
     <div class="inner">
@@ -797,7 +840,7 @@ c.draw = function() {
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
-                
+            
 
     <article class="post-card post-template">
         
@@ -869,7 +912,7 @@ c.draw = function() {
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
-                
+            
 
     <article class="post-card post-template">
         
@@ -992,7 +1035,6 @@ c.draw = function() {
 <!-- /post -->
 
 <!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
-
 
         <!-- Previous/next page links - displayed on every page -->
         

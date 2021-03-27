@@ -261,22 +261,24 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full  tag-teacher-picture post ">
+        <article
+            class="post-full  tag-teacher-picture post ">
 
             <header class="post-full-header">
-                
+
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="27 July 2017">27 July 2017</time>
+                    <time class="post-full-meta-date"
+                        datetime="27 July 2017">27 July 2017</time>
                     
-                        <span class="date-divider">/</span>
-                        
-                        
-                        
-                            <a href='/OralHistory/tag/teacher-picture/'>教师图鉴</a>
-                            
-                            
-                            
-                        
+                    <span class="date-divider">/</span>
+                    
+
+
+                    <a href='/OralHistory/tag/teacher-picture/'>教师图鉴</a>
+                    
+
+                    
+                    
                     
                 </section>
                 <h1 class="post-full-title">Advanced Markdown tips</h1>
@@ -361,36 +363,38 @@ into the {body} of the default.hbs template -->
                 <!-- Everything inside the #author tags pulls data from the author -->
                 <!-- #author-->
                 
-                    
-                        <section class="author-card">
-                            
-                                <img class="author-profile-image" src="/OralHistory/assets/images/ghost.png" alt="ghost" />
-                            
-                            <section class="author-card-content">
-                                <h4 class="author-card-name"><a href="/OralHistory/author/ghost">Ghost</a></h4>
-                                
-                                    <p>The professional publishing platform</p>
-                                
-                            </section>
-                        </section>
-                        <div class="post-full-footer-right">
-                            <a class="author-card-button" href="/OralHistory/author/ghost">Read More</a>
-                        </div>
-                    
                 
+                <section class="author-card">
                     
+                    <img class="author-profile-image" src="/OralHistory/assets/images/ghost.png"
+                        alt="ghost" />
+                    
+                    <section class="author-card-content">
+                        <h4 class="author-card-name"><a
+                                href="/OralHistory/author/ghost">Ghost</a></h4>
+                        
+                        <p>The professional publishing platform</p>
+                        
+                    </section>
+                </section>
+                <div class="post-full-footer-right">
+                    <a class="author-card-button" href="/OralHistory/author/ghost">Read More</a>
+                </div>
                 
-                    
                 
-                    
                 
-                    
                 
-                    
                 
-                    
                 
-                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
                 <!-- /author  -->
             </footer>
@@ -402,136 +406,174 @@ into the {body} of the default.hbs template -->
             <!--PC和WAP自适应版-->
 
             
-            
 
-            <div id="SOHUCS" sid="/advanced-markdown"></div> 
-            <script type="text/javascript"> 
-            (function(){ 
-            var appid = 'cyvnjRV1O'; 
-            var conf = '99ebfeb952c491d3bbc829f14917081f'; 
-            var width = window.innerWidth || document.documentElement.clientWidth; 
-            if (width < 1000) {
-            var head = document.getElementsByTagName('head')[0]||document.head||document.documentElement;
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.charset = 'utf-8';
-            script.id = 'changyan_mobile_js';
-            script.src = 'https://cy-cdn.kuaizhan.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf;
-            head.appendChild(script);
-            } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://cy-cdn.kuaizhan.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+
+            <div id="SOHUCS" sid="/advanced-markdown"></div>
+            <script type="text/javascript">
+                (function () {
+                    var appid = 'cyvnjRV1O';
+                    var conf = '99ebfeb952c491d3bbc829f14917081f';
+                    var width = window.innerWidth || document.documentElement.clientWidth;
+                    if (width < 1000) {
+                        var head = document.getElementsByTagName('head')[0] || document.head || document
+                            .documentElement;
+                        var script = document.createElement('script');
+                        script.type = 'text/javascript';
+                        script.charset = 'utf-8';
+                        script.id = 'changyan_mobile_js';
+                        script.src =
+                            'https://cy-cdn.kuaizhan.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' +
+                            appid + '&conf=' + conf;
+                        head.appendChild(script);
+                    } else {
+                        var loadJs = function (d, a) {
+                            var c = document.getElementsByTagName("head")[0] || document.head || document
+                                .documentElement;
+                            var b = document.createElement("script");
+                            b.setAttribute("type", "text/javascript");
+                            b.setAttribute("charset", "UTF-8");
+                            b.setAttribute("src", d);
+                            if (typeof a === "function") {
+                                if (window.attachEvent) {
+                                    b.onreadystatechange = function () {
+                                        var e = b.readyState;
+                                        if (e === "loaded" || e === "complete") {
+                                            b.onreadystatechange = null;
+                                            a()
+                                        }
+                                    }
+                                } else {
+                                    b.onload = a
+                                }
+                            }
+                            c.appendChild(b)
+                        };
+                        loadJs("https://cy-cdn.kuaizhan.com/upload/changyan.js", function () {
+                            window.changyan.api.config({
+                                appid: appid,
+                                conf: conf
+                            })
+                        });
+                    }
+                })();
+            </script>
 
         </article>
 
     </div>
 </main>
+<style>
 
+    .module-cmt-notice{
+        display: none;
+    }
+</style>
 <!-- Links to Previous/Next posts -->
 <aside class="read-next outer">
     <div class="inner">
         <div class="read-next-feed">
             
-                
-                
-                
-                
-                    <article class="read-next-card"
-                        
-                            style="background-image: url(/OralHistory/assets/images/blog-cover.jpg)"
-                        
-                    >
-                        <header class="read-next-card-header">
-                            <small class="read-next-card-header-sitetitle">&mdash; 北大附中口述史 &mdash;</small>
-                            
-                                <h3 class="read-next-card-header-title"><a href="/OralHistory/tag/teacher-picture/">教师图鉴</a></h3>
-                            
-                        </header>
-                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+            
+            
+            
+            
+            <article class="read-next-card" 
+                style="background-image: url(/OralHistory/assets/images/blog-cover.jpg)" >
+                <header class="read-next-card-header">
+                    <small class="read-next-card-header-sitetitle">&mdash; 北大附中口述史 &mdash;</small>
+                    
+                    <h3 class="read-next-card-header-title"><a
+                            href="/OralHistory/tag/teacher-picture/">教师图鉴</a>
+                    </h3>
+                    
+                </header>
+                <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
 </div>
-                        <div class="read-next-card-content">
-                            <ul>
-                                
-                                
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/OralHistory/welcome">Welcome to Ghost</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/OralHistory/the-editor">Using the Ghost editor</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/OralHistory/using-tags">Organising your content with tags</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                
-                                  
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                            </ul>
-                        </div>
-                        <footer class="read-next-card-footer">
-                            <a href="/OralHistory/tag/teacher-picture/">
-                                
-                                    See all 5 posts  →
-                                
-                            </a>
-                        </footer>
-                    </article>
-                
+                <div class="read-next-card-content">
+                    <ul>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="/OralHistory/welcome">Welcome to Ghost</a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="/OralHistory/the-editor">Using the Ghost editor</a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="/OralHistory/using-tags">Organising your content with tags</a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </ul>
+                </div>
+                <footer class="read-next-card-footer">
+                    <a href="/OralHistory/tag/teacher-picture/">
+                        
+                        See all 5 posts →
+                        
+                    </a>
+                </footer>
+            </article>
+            
             
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
-                
+            
 
     <article class="post-card post-template">
         
@@ -596,7 +638,7 @@ into the {body} of the default.hbs template -->
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
-                
+            
 
     <article class="post-card post-template">
         
@@ -717,7 +759,6 @@ into the {body} of the default.hbs template -->
 <!-- /post -->
 
 <!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
-
 
         <!-- Previous/next page links - displayed on every page -->
         
