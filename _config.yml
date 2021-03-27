@@ -100,3 +100,6 @@ exclude:
   - changelog.md
   - "*.Rmd"
   - .git*
+
+source: .
+destination: ./_site
